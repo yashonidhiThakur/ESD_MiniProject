@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Montserrat:wght@400;600;700&display=swap');
+
+:root {
+  --bg-color: #f8f9fa;
+  --card-bg: #ffffff;
+  --primary-text: #2d3748;
+  --secondary-text: #718096;
+  --accent-color: #e2e8f0;
+  --highlight-color: #4fd1c5;
+  /* Soft teal */
+  --font-heading: 'Arial', sans-serif;
+  --font-body: 'Arial', sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg-color);
+  color: var(--primary-text);
+}
+
+.App {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--primary-text);
+}
+
+button {
+  font-family: var(--font-heading);
+  font-weight: 600;
+}

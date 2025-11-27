@@ -1,0 +1,37 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot: TimeTableApplication",
+            "request": "launch",
+            "mainClass": "com.sriram9217.timetable.TimeTableApplication",
+            "projectName": "TimeTable",
+            "cwd": "${workspaceFolder}/TimeTable",
+            "env": {
+                "SPRING_PROFILES_ACTIVE": "dev"
+            }
+        },
+        {
+            "name": "React: Start Frontend",
+            "type": "node",
+            "request": "launch",
+            "runtimeExecutable": "npm",
+            "runtimeArgs": [
+                "start"
+            ],
+            "cwd": "${workspaceFolder}/TimeTableFrontend",
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen"
+        }
+    ],
+    "compounds": [
+        {
+            "name": "Full Stack: Run All",
+            "configurations": [
+                "Spring Boot: TimeTableApplication",
+                "React: Start Frontend"
+            ]
+        }
+    ]
+}
